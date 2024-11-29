@@ -7,6 +7,7 @@
     --primary-color: #FF5400;
     --primary-text-color: #424247;
     --highlight-text-color: #131318;
+    --secondary-text-color: #5A5A5D;
 }
 
 /* Common codes */
@@ -25,6 +26,7 @@
     text-decoration: none;
 }
 
+
 /* Body styles */
 body {
     background-color: var(--base-color);
@@ -37,6 +39,16 @@ body {
     max-width: 1170px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.btn-primary{
+    background-color: var(--primary-color);
+    width: 174px;
+    height: 52px;
+    border: none;
+    border-radius: 8px;
+    color: var(--base-color);
+    font-family: "Mulish", serif;
 }
 
 /* -------------------------------------------------------------------------------------
@@ -198,6 +210,57 @@ header {
     font-size: 0.9rem;
     padding-left: 30px;
 }
+
+/* Our tour plans styles */
+#popular-tours{
+    margin-top: 75px;
+}
+
+.popular-tours-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.popular-tours-article{
+    width: 550PX;
+    height: 465PX;
+}
+
+.popular-tours-article h2{
+    font-size: 40px;
+    color: var(--highlight-text-color);
+    padding-bottom: 24px;
+}
+
+.popular-tours-article p{
+    font-size: 16px;
+    color: var(--secondary-text-color);
+    padding-bottom: 1.5rem;
+    text-align: justify;
+}
+
+.popular-tours-lists{
+    padding-bottom: 1rem;
+    padding-left: 20px;
+}
+
+.popular-tours-lists ul li{
+    list-style: disc;
+    padding-bottom: 16px;
+    color: var(--secondary-text-color);
+}
+
+.popular-tours-img{
+    width: 540px;
+    height: 550px;
+}
+
+.popular-tours-article button{
+    margin-top: 8px;
+}
+/* --------------------------------------------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+______________________________________________________________________________________________ */
 
 /* Media query for screens below 600px */
 @media only screen and (max-width: 600px) {
