@@ -170,18 +170,8 @@ header {
     background: transparent;
     font-size: 1rem;
     outline: none;
-    padding-left: 35px;
-    padding-right: 35px;
-}
-
-.banner__input-wrapper i {
-    position: absolute;
-    left: 10px; /* Icon on the left side */
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 1.2rem;
-    color: rgba(19, 19, 24, 0.7);
-    pointer-events: none;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .banner__input::placeholder {
@@ -189,26 +179,31 @@ header {
     font-size: 0.9rem;
 }
 
-#input-search {
-    background: var(--primary-color);
-    position: relative;
-    display: flex;
-}
-
-#input-search i {
+.banner__input-wrapper i {
     position: absolute;
-    left: 40px;
+    right: 15px;
     top: 50%;
     transform: translateY(-50%);
     font-size: 1.2rem;
-    color: var(--base-color);
+    color: rgba(19, 19, 24, 0.7);
     pointer-events: none;
 }
 
-#input-search .banner__input::placeholder {
+.input-search{
+    background: var(--primary-color);
+}
+
+.input-search .banner__input::placeholder{
     color: var(--base-color);
-    font-size: 0.9rem;
-    padding-left: 30px;
+    position: absolute;
+    right: 2rem;
+}
+
+.input-search i{
+    color: var(--base-color);
+    position: absolute;
+    right: 6.5rem;
+
 }
 
 /* Our tour plans styles */
