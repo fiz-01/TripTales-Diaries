@@ -598,4 +598,52 @@ ________________________________________________________________________________
         height: 175px;
     }
     /* choose your destination section responsiveness ends here  */
+
+    /* why to choose us section responsiveness starts here */
+    .choose-us__wrapper {
+        margin-top: 24px;
+    }
+
+    .choose-us__texts h2 {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+
+    .choose-us__texts p {
+        font-size: 14px;
+    }
+
+    .choose-us__cards-wrapper {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .choose-us__card {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        bottom: auto;
+        width: 100%;
+        height: 289px;
+    }
+
+    .card-contents-wrapper img {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 16px;
+    }
+
+    .card-contents-wrapper h3 {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+
+    .card-contents-wrapper p {
+        font-size: 14px;
+        max-width: 271px;
+    }
 }
