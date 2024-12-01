@@ -345,6 +345,97 @@ header {
 
 /* choose your destination section styles ends here  */
 
+/* why to choose us style starts here  */
+.choose-us__wrapper{
+    margin-top: 100px;
+}
+.choose-us__texts{
+    flex-direction: column;
+    text-align: center;
+}
+
+.choose-us__texts h2{
+    font-size: 40px;
+    color: var(--highlight-text-color);
+    margin-bottom: 24px;
+}
+
+.choose-us__texts p{
+    font-size: 16px;
+    color: var(--secondary-text-color);
+    max-width: 643px;
+}
+
+.choose-us__cards-wrapper{
+    position: relative;
+    margin-top: 48px;
+    width: 100%;
+    height: auto;
+}
+
+.choose-us__card{
+    width: 561px;
+    height: 284px;
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, color 0.3s ease;;
+    cursor: pointer;
+}
+
+.choose-us__card:hover{
+    transform: scale(1.005);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-1{
+    background-color: #FFFBF7;
+    position: absolute;
+    right: auto;
+    top: 0;
+    left: 0;
+}
+.card-2{
+    background-color: #F4FCFE;
+    position: absolute;
+    left: auto;
+    right: 0;
+
+}
+.card-3{
+    background-color: #FEF5F5;
+    position: absolute;
+    top: 308px;
+    bottom: 0;
+    left: 25%;
+}
+
+.card-contents-wrapper{
+    padding: 32px 55px 32px 32px;
+}
+
+.card-contents-wrapper img{
+    width: 64px;
+    height: 64px;
+    margin-bottom: 32px;
+}
+
+.card-contents-wrapper h3{
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--highlight-text-color);
+    margin-bottom: 16px;
+}
+
+.card-contents-wrapper p{
+    font-size: 16px;
+    color: var(--secondary-text-color);
+    max-width: 486px;
+}
+/* why to choose us style ends here  */
+
+
+
 /* --------------------------------------------------------------------------------------------------
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 ______________________________________________________________________________________________ */
@@ -439,18 +530,15 @@ ________________________________________________________________________________
         right: 55px;
         left: auto;
     }
-    
     .last-input i{
         left: 55px;
         right: auto;
-    
     }
 /* popular tours section responsiveness */
     .popular-tours-wrapper{
         width: 100%;
         flex-direction: column;
         gap: 24px;
-        
     }
 
     .popular-tours-article{
@@ -479,7 +567,7 @@ ________________________________________________________________________________
     .choose-destination__texts h2{
         padding-bottom: 16px;
     }
-    
+
     .choose-destination__texts p{
         margin-bottom: 16px;
     }
