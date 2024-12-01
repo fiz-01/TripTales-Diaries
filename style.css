@@ -10,12 +10,8 @@
     --secondary-text-color: #5A5A5D;
 }
 
-/* Common codes */
-.content-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
+
 
 /* Reset styles */
 * {
@@ -25,7 +21,6 @@
     list-style: none;
     text-decoration: none;
 }
-
 
 /* Body styles */
 body {
@@ -41,6 +36,17 @@ body {
     padding: 0 15px;
 }
 
+/* Common codes */
+h1,h2{
+    font-weight: 800;
+}
+
+.content-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .btn-primary{
     background-color: var(--primary-color);
     width: 174px;
@@ -49,6 +55,13 @@ body {
     border-radius: 8px;
     color: var(--base-color);
     font-family: "Mulish", serif;
+    cursor: pointer;
+}
+
+.btn-primary:hover{
+    background-color: green;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+
 }
 
 /* -------------------------------------------------------------------------------------
@@ -198,7 +211,7 @@ header {
 
 .banner__input-wrapper.last-input{
     background: var(--primary-color);
-    
+
 }
 
 .last-input .banner__input::placeholder{
@@ -261,6 +274,86 @@ header {
 .popular-tours-article button{
     margin-top: 8px;
 }
+
+/* choose your destination section styles starts here  */
+
+.choose-destination-wrapper{
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+}
+.choose-destination__texts{
+    flex-direction: column;
+    text-align: center;
+}
+
+.choose-destination__texts h2{
+    color: var(--highlight-text-color);
+    max-width: 478px;
+    font-size: 40px;
+    padding-bottom: 24px;
+}
+
+.choose-destination__texts p{
+    color: var(--secondary-text-color);
+    max-width: 643px;
+    margin-bottom: 3rem;
+}
+
+.choose-destination__images {
+    display: grid;
+    text-align: center;
+    gap: 24px;
+    grid-template-areas:
+        'image-1 image-1 image-2 image-2'
+        'image-3 image-4 image-4 image-5'
+        'image-6 image-7 image-7 image-7';
+}
+
+
+.choose-destination__img-1,
+.choose-destination__img-2,
+.choose-destination__img-3,
+.choose-destination__img-4,
+.choose-destination__img-5,
+.choose-destination__img-6,
+.choose-destination__img-7 {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    color: var(--base-color);
+    font-size: 28px;
+    font-weight: 800;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.choose-destination__img-1 { grid-area: image-1; background-image: url(Images/Maldives.png); }
+.choose-destination__img-2 { grid-area: image-2; background-image: url(Images/Indonesia.png); }
+.choose-destination__img-3 { grid-area: image-3; background-image: url(Images/Srilanka.png); }
+.choose-destination__img-4 { grid-area: image-4; background-image: url(Images/North-America.png); }
+.choose-destination__img-5 { grid-area: image-5; background-image: url(Images/Kashmir.png); }
+.choose-destination__img-6 { grid-area: image-6; background-image: url(Images/Bangladesh.png); }
+.choose-destination__img-7 { grid-area: image-7; background-image: url(Images/Bandarban.png); }
+
+.grid-img {
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.grid-img:hover {
+    transform: scale(1.005);
+    color: yellow;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* choose your destination section styles ends here  */
+
 /* --------------------------------------------------------------------------------------------
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 ______________________________________________________________________________________________ */
