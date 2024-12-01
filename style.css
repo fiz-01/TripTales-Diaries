@@ -132,6 +132,8 @@ header {
 
 .banner__texts {
     color: var(--base-color);
+    max-width: 675px;
+    max-height: 155px;
 }
 
 .banner__texts h1 {
@@ -174,9 +176,12 @@ header {
     padding-right: 1rem;
 }
 
+
 .banner__input::placeholder {
     color: rgba(19, 19, 24, 0.5);
-    font-size: 0.9rem;
+    font-size: 1rem;
+    position: absolute;
+    left: 15px;
 }
 
 .banner__input-wrapper i {
@@ -189,20 +194,23 @@ header {
     pointer-events: none;
 }
 
-.input-search{
+
+
+.banner__input-wrapper.last-input{
     background: var(--primary-color);
+    
 }
 
-.input-search .banner__input::placeholder{
+.last-input .banner__input::placeholder{
     color: var(--base-color);
-    position: absolute;
-    right: 2rem;
+    right: 35px;
+    left: auto;
 }
 
-.input-search i{
+.last-input i{
     color: var(--base-color);
-    position: absolute;
-    right: 6.5rem;
+    left: 35px;
+    right: auto;
 
 }
 
@@ -258,16 +266,20 @@ header {
 ______________________________________________________________________________________________ */
 
 /* Media query for screens below 600px */
+
 @media only screen and (max-width: 600px) {
     .wrapper {
-        max-width: 100%;
+        max-width: 335px;
         margin: 0 auto;
-        padding: 0 15px;
+        padding: 0 20px;
     }
 
+    /* navigation style responsiveness */
     .nav-container {
-        padding-top: 44px;
-        padding-bottom: 0;
+        width: 100%;
+        height: 64px;
+        margin: 0;
+        padding: 0;
     }
 
    .nav-icon img{
@@ -288,40 +300,49 @@ ________________________________________________________________________________
         font-size: 24px;
     }
 
-    .fa-solid fa-bars{
-        width: 24px;
-        height: 24px;
-    }
+/* banner style responsiveness */
 
     .banner-container {
         width: 100%;
         height: auto;
+
+        background: linear-gradient(
+            rgba(19, 19, 24, 0.8),
+            rgba(19, 19, 24, 0)
+        ), url(Images/banner.png);
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 16px;
+        flex-direction: column;
+        text-align: center;
     }
 
     .banner__texts {
         max-width: 304px;
-        max-height: 100px;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
+        max-height: 99px;
+        margin-bottom: 1.8rem;
+        padding: 2rem 1rem;
         text-align: center;
     }
 
     .banner__inputs {
-        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding-top: 2rem;
         margin-bottom: 2rem;
+        width: 80%;
 
     }
 
     .banner__texts h1 {
-        font-size: 1.5rem;
+        font-size: 22px;
     }
 
     .banner__texts p {
-        font-size: 0.9rem;
+        font-size: 14px;
         padding-top: 0.5rem;
     }
 
@@ -329,4 +350,38 @@ ________________________________________________________________________________
         width: 100%;
         margin-bottom: 1rem;
     }
+
+    .last-input .banner__input::placeholder{
+        right: 55px;
+        left: auto;
+    }
+    
+    .last-input i{
+        left: 55px;
+        right: auto;
+    
+    }
+/* popular tours section responsiveness */
+    .popular-tours-wrapper{
+        width: 100%;
+        flex-direction: column;
+        gap: 24px;
+        
+    }
+
+    .popular-tours-article{
+        width: 100%;
+        height: auto;
+    }
+    .popular-tours-img{
+        width: 100%;
+        height: auto;
+    }
+
+    .popular-tours-img img{
+        width: 100%;
+        height: auto;
+    }
+
+   
 }
