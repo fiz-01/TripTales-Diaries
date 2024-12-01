@@ -348,6 +348,10 @@ header {
 /* why to choose us style starts here  */
 .choose-us__wrapper{
     margin-top: 100px;
+    position: relative;
+    height: auto;
+    overflow: hidden;
+    padding-bottom: 600px;
 }
 .choose-us__texts{
     flex-direction: column;
@@ -434,7 +438,43 @@ header {
 }
 /* why to choose us style ends here  */
 
+/* Deals and discount section styles starts here  */
+.deals-discount-wrapper{
+    margin-top: 95px;
+}
 
+.deals-discount__texts{
+    flex-direction: column;
+    text-align: center;
+}
+.deals-discount__texts h2{
+    font-size: 40px;
+    font-weight: 800;
+    color: var(--highlight-text-color);
+    margin-bottom: 24px;
+}
+
+.deals-discount__texts p{
+    font-size: 16px;
+    color: var(--secondary-text-color);
+    max-width: 643px;
+}
+
+.deals-discount-card-wrapper{
+    width: 579px;
+    height: 389px;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 8px solid green;
+}
+.card-top-icons{
+    justify-content: space-between;
+}
+
+.card-top-icon{
+    gap: 8px;
+}
+/* Deals and discount section styles ends here  */
 
 /* --------------------------------------------------------------------------------------------------
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
