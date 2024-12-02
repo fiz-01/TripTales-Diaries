@@ -5,9 +5,9 @@
 :root {
     --base-color: #FFFFFF;
     --primary-color: #FF5400;
-    --primary-text-color: #424247;
     --highlight-text-color: #131318;
-    --secondary-text-color: #5A5A5D;
+    --primary-text-color: #5A5A5D;
+    --secondary-text-color: #424247;
 }
 
 
@@ -38,7 +38,15 @@ body {
 
 /* Common codes */
 h1,h2{
+    font-size: 40px;
     font-weight: 800;
+    color: var(--highlight-text-color);
+}
+
+p{
+    font-size: 16px;
+    font-weight: normal;
+    color: var(--primary-text-color);
 }
 
 .content-center {
@@ -93,7 +101,6 @@ header {
 
 .nav-icon h1 {
     font-size: 2rem;
-    color: var(--highlight-text-color);
 }
 
 .nav-icon span {
@@ -103,7 +110,7 @@ header {
 .menu-hamburger {
     width: 1.5rem;
     height: 1.5rem;
-    color: var(--primary-text-color);
+    color: var(--secondary-text-color);
     display: none;
 }
 
@@ -113,7 +120,7 @@ header {
 }
 
 .nav-lists li a {
-    color: var(--primary-text-color);
+    color: var(--secondary-text-color);
     font-weight: 500;
     transition: color 0.3s ease;
 }
@@ -144,19 +151,21 @@ header {
 }
 
 .banner__texts {
-    color: var(--base-color);
     max-width: 675px;
     max-height: 155px;
 }
 
-.banner__texts h1 {
+#banner-header{
     font-size: 3rem;
     font-weight: 800;
+    color: var(--base-color);
+    margin-bottom: 24px;
 }
 
-.banner__texts p {
+#banner-paragraph{
     font-size: 1rem;
     font-weight: normal;
+    color: var(--base-color);
 }
 
 .banner__inputs {
@@ -243,14 +252,10 @@ header {
 }
 
 .popular-tours-article h2{
-    font-size: 40px;
-    color: var(--highlight-text-color);
     padding-bottom: 24px;
 }
 
 .popular-tours-article p{
-    font-size: 16px;
-    color: var(--secondary-text-color);
     padding-bottom: 1.5rem;
     text-align: justify;
 }
@@ -263,7 +268,7 @@ header {
 .popular-tours-lists ul li{
     list-style: disc;
     padding-bottom: 16px;
-    color: var(--secondary-text-color);
+    color: var(--primary-text-color);
 }
 
 .popular-tours-img{
@@ -288,16 +293,14 @@ header {
 }
 
 .choose-destination__texts h2{
-    color: var(--highlight-text-color);
     max-width: 478px;
-    font-size: 40px;
     padding-bottom: 24px;
 }
 
 .choose-destination__texts p{
-    color: var(--secondary-text-color);
     max-width: 643px;
     margin-bottom: 3rem;
+    color: var(--highlight-text-color);
 }
 
 .choose-destination__images {
@@ -332,7 +335,7 @@ header {
 .grid-img:hover {
     transform: scale(1.005);
     color: yellow;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 9px rgba(0, 0, 0, 0.2);
 }
 
 .choose-destination__img-1 { grid-area: image-1; background-image: url(Images/Maldives.png); }
@@ -359,15 +362,12 @@ header {
 }
 
 .choose-us__texts h2{
-    font-size: 40px;
-    color: var(--highlight-text-color);
     margin-bottom: 24px;
 }
 
 .choose-us__texts p{
-    font-size: 16px;
-    color: var(--secondary-text-color);
     max-width: 643px;
+    color: var(--highlight-text-color);
 }
 
 .choose-us__cards-wrapper{
@@ -389,7 +389,7 @@ header {
 
 .choose-us__card:hover{
     transform: scale(1.005);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 9px rgba(0, 0, 0, 0.2);
 }
 
 .card-1{
@@ -432,8 +432,6 @@ header {
 }
 
 .card-contents-wrapper p{
-    font-size: 16px;
-    color: var(--secondary-text-color);
     max-width: 486px;
 }
 /* why to choose us style ends here  */
@@ -448,16 +446,12 @@ header {
     text-align: center;
 }
 .deals-discount__texts h2{
-    font-size: 40px;
-    font-weight: 800;
-    color: var(--highlight-text-color);
     margin-bottom: 24px;
 }
 
 .deals-discount__texts p{
-    font-size: 16px;
-    color: var(--secondary-text-color);
     max-width: 643px;
+    color: var(--highlight-text-color);
 }
 
 .deals-discount-card-wrapper{
@@ -473,6 +467,10 @@ header {
 
 .card-top-icon{
     gap: 8px;
+}
+
+.fw-icon{
+    color: var(--primary-color);
 }
 /* Deals and discount section styles ends here  */
 
