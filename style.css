@@ -8,6 +8,11 @@
     --highlight-text-color: #131318;
     --primary-text-color: #5A5A5D;
     --secondary-text-color: #424247;
+
+    --primary-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
+    --hover-box-shadow: 0 5px 9px rgba(0, 0, 0, 0.3);
+
+
 }
 
 
@@ -66,9 +71,10 @@ p{
     cursor: pointer;
 }
 
+
 .btn-primary:hover{
     background-color: green;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: var(--hover-box-shadow)
 
 }
 
@@ -326,7 +332,7 @@ header {
     font-size: 28px;
     font-weight: 800;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--primary-box-shadow);
     transition: transform 0.3s ease;
     cursor: pointer;
     transition: transform 0.3s ease, color 0.3s ease;
@@ -335,7 +341,7 @@ header {
 .grid-img:hover {
     transform: scale(1.005);
     color: yellow;
-    box-shadow: 0 5px 9px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--hover-box-shadow);
 }
 
 .choose-destination__img-1 { grid-area: image-1; background-image: url(Images/Maldives.png); }
@@ -382,14 +388,14 @@ header {
     height: 284px;
     border: none;
     border-radius: 16px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--primary-box-shadow);
     transition: transform 0.3s ease, color 0.3s ease;;
     cursor: pointer;
 }
 
 .choose-us__card:hover{
     transform: scale(1.005);
-    box-shadow: 0 5px 9px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--hover-box-shadow);
 }
 
 .card-1{
@@ -437,8 +443,50 @@ header {
 /* why to choose us style ends here  */
 
 /* Deals and discount section styles starts here  */
+
+.deals-discount-background-wrapper {
+    margin-top: 48px;
+    padding: 55px;
+    border: none;
+    border-radius: 16px;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    box-shadow: var(--primary-box-shadow);
+    position: relative;
+    overflow: hidden;
+}
+
+
+.deals-discount-background-wrapper {
+    background-image: url(Images/Deals1.png);
+}
+
+.deals-discount-background-wrapper.wrapper-2 {
+    justify-content: flex-start;
+    background-image: none;
+}
+
+.deals-discount-background-wrapper.wrapper-2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(Images/Deals1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: scaleX(-1);
+    z-index: -1;
+}
+
 .deals-discount-wrapper{
     margin-top: 95px;
+    margin-bottom: 48px;
 }
 
 .deals-discount__texts{
@@ -459,19 +507,58 @@ header {
     height: 389px;
     padding: 50px;
     background-color: rgba(255, 255, 255, 0.8);
-    border: 8px solid green;
+    border: none;
+    border-radius: 16px;
 }
+
+.deals-discount-card-wrapper h3{
+    color: var(--highlight-text-color);
+    font-size: 24px;
+    font-weight: 800px;
+    margin-bottom: 16px;
+}
+
+.deals-discount-card-wrapper>p{
+    max-width: 425px;
+    margin-bottom: 16px;
+}
+
+.deals-discount-card-wrapper h4{
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+
 .card-top-icons{
+    max-height: 24px;
     justify-content: space-between;
+    max-width: 386px;
+    margin-bottom: 26px;
 }
 
 .card-top-icon{
     gap: 8px;
 }
 
+
 .fw-icon{
     color: var(--primary-color);
 }
+
+.btn-packages{
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+.packages-btn{
+    width: 210px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 /* Deals and discount section styles ends here  */
 
 /* --------------------------------------------------------------------------------------------------
