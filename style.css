@@ -68,6 +68,8 @@ p{
     border-radius: 8px;
     color: var(--base-color);
     font-family: "Mulish", serif;
+    font-size: 20px;
+    font-weight: 800;
     cursor: pointer;
 }
 
@@ -534,20 +536,156 @@ header {
     color: var(--primary-color);
 }
 
-.btn-packages{
+
+.btn-packages {
     height: auto;
     width: 100%;
     position: relative;
 }
 
-.packages-btn{
+.packages-btn {
     width: 210px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
 }
 
-/* Deals and discount section styles ends here  */
+/* Glimpse section styles start  */
+
+#glimpse-section {
+    position: relative;
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+.glimpse__texts{
+    height: auto;
+}
+.glimpse__texts h2 {
+    max-width: 448px;
+    height: 120px;
+    margin-bottom: 24px;
+    font-size: 40px;
+}
+
+.glimpse__texts p {
+    max-width: 532px;
+    height: 52px;
+    margin-bottom: 24px;
+}
+
+.glimpse__texts>ul{
+    padding-left: 20px;
+}
+
+.glimpse__texts > ul > li {
+    list-style:disc;
+    max-width: 518px;
+    height: 52px;
+    margin-bottom: 16px;
+    color: var(--highlight-text-color);
+}
+
+.btn-see-more{
+    width: 174px;
+    height: 52px;
+    margin-top: 16px;
+}
+
+.glimpse-wrapper{
+    display: flex;
+    gap: 28px;
+    justify-content: space-between;
+}
+
+.glimpse-video{
+
+    position: relative;
+
+    width: 610px;
+    height: 424px;
+
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+
+    border: none;
+    border-radius: 16px;
+
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+    padding: 24px;
+    background-image: url(Images/MountainBangladesh.png);
+}
+
+.glimpse-video>p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--base-color);
+    font-size: 24px;
+    font-weight: bold;
+    width: 276px;
+    height: 72px;
+    text-align: center;
+    /* margin-bottom: 107px; */
+}
+
+.flexible-container-outer{
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.flexible-container-inner{
+    color: var(--base-color);
+}
+.flexible-container-inner>.exception>p{
+    color: var(--base-color);
+}
+.left-contents{
+    width: 66px;
+    height: 24px;
+    justify-content: space-between;
+}
+
+.right-contents{
+    width: 104px;
+    height: 24px;
+    justify-content: space-between;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.3);
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.watched {
+    width: 20%;
+    height: 100%;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 8px 0 0 8px;
+}
+
+.vdo-controller-wrapper{
+    position: absolute;
+    top: auto;
+    right: auto;
+    bottom: 24px;
+    left: 12px;
+    width: 100%;
+    padding-right: 24px;
+}
 
 /* --------------------------------------------------------------------------------------------------
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
