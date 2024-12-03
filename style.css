@@ -34,6 +34,11 @@ body {
     scroll-behavior: smooth;
 }
 
+main{
+    margin: 0;
+    padding: 0;
+}
+
 /* Wrapper for layout */
 .wrapper {
     max-width: 1170px;
@@ -163,14 +168,14 @@ header {
     max-height: 155px;
 }
 
-#banner-header{
+.banner__texts>h1{
     font-size: 3rem;
     font-weight: 800;
     color: var(--base-color);
     margin-bottom: 24px;
 }
 
-#banner-paragraph{
+.banner__texts>p{
     font-size: 1rem;
     font-weight: normal;
     color: var(--base-color);
@@ -183,6 +188,7 @@ header {
     background-color: rgba(255, 255, 255, 0.3);
     border: none;
     border-radius: 8px;
+    height: auto;
 }
 
 .banner__input-wrapper {
@@ -693,9 +699,13 @@ ________________________________________________________________________________
 
 @media only screen and (max-width: 600px) {
     .wrapper {
-        max-width: 335px;
+        width: auto;
         margin: 0 auto;
-        padding: 0 20px;
+        padding: 0 20px 0 20px;
+    }
+
+    header {
+        margin-bottom: 0;
     }
 
     /* navigation style responsiveness */
@@ -729,50 +739,39 @@ ________________________________________________________________________________
     .banner-container {
         width: 100%;
         height: auto;
-
-        background: linear-gradient(
-            rgba(19, 19, 24, 0.8),
-            rgba(19, 19, 24, 0)
-        ), url(Images/banner.png);
-        width: 100%;
-        height: 100%;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        border-radius: 16px;
-        flex-direction: column;
-        text-align: center;
+        margin-bottom: 0;
     }
 
-    .banner__texts {
-        max-width: 304px;
-        max-height: 99px;
-        margin-bottom: 1.8rem;
-        padding: 2rem 1rem;
-        text-align: center;
+    .banner__texts{
+        width: 304px;
+        height: 99px;
+    }
+
+    .banner__texts>h1{
+        font-size: 22px;
+        margin-top: 32px;
+        margin-bottom: 8px;
+    }
+
+    .banner__texts>p{
+        font-size: 14px;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 
     .banner__inputs {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-bottom: 2rem;
+        margin-top: 32px;
+        margin-bottom: 32;
         width: 80%;
-
-    }
-
-    .banner__texts h1 {
-        font-size: 22px;
-    }
-
-    .banner__texts p {
-        font-size: 14px;
-        padding-top: 0.5rem;
+        gap: 1rem;
+        margin-bottom: 32px;
     }
 
     .banner__input-wrapper {
         width: 100%;
-        margin-bottom: 1rem;
     }
 
     .last-input .banner__input::placeholder{
@@ -784,10 +783,12 @@ ________________________________________________________________________________
         right: auto;
     }
 /* popular tours section responsiveness */
+    #popular-tours{
+        margin-top: 24px;
+    }
     .popular-tours-wrapper{
         width: 100%;
         flex-direction: column;
-        gap: 24px;
     }
 
     .popular-tours-article{
@@ -804,6 +805,9 @@ ________________________________________________________________________________
         height: auto;
     }
 
+    .popular-tours-article button{
+        margin-bottom: 24px;
+    }
     /* choose your destination section responsiveness starts here  */
     .choose-destination-wrapper{
         margin-top: 24px;
@@ -849,7 +853,7 @@ ________________________________________________________________________________
     /* choose your destination section responsiveness ends here  */
 
     /* why to choose us section responsiveness starts here */
-    
+
     .choose-us__wrapper {
         margin-top: 24px;
         height: auto;
