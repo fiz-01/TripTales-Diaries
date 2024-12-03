@@ -59,6 +59,13 @@ p{
     color: var(--primary-text-color);
 }
 
+hr{
+    border: none;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(19, 19, 24, 0.1);
+}
+
 .content-center {
     display: flex;
     align-items: center;
@@ -690,6 +697,100 @@ header {
 }
 
 /* glimpse section ends here  */
+
+/* Newsletter subscription styles starts */
+.newsletter-section-wrapper{
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 24px;
+}
+
+.newsletter-subscription-field{
+    width: 474px;
+    height: 422px;
+    padding: 40px;
+    border: 1px solid var(--primary-color);
+    border-radius: 16px;
+}
+
+.newsletter-subscription-form{
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+
+.newsletter-subscription-form h5{
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--highlight-text-color);
+}
+
+.newsletter-subscription-form p{
+    width: 350px;
+    height: 52px;
+}
+
+.newsletter-subscription-form input{
+    width: 100%;
+    height: 52px;
+    padding-left: 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #F3F3F3;
+}
+
+.newsletter-subscription-form input::placeholder{
+    color: rgba(19, 19, 24, 0.3);
+}
+
+.newsletter-subscription__button{
+    width: 100%;
+}
+
+.newsletter-img{
+    position: relative;
+    width: 672px;
+    height: 422px;
+    border: none;
+    border-radius: 16px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(Images/NewsLetter.png);
+}
+
+.card-discount{
+    position: absolute;
+    right: 8px;
+    bottom: 50px;
+    transform: rotateZ(-19.63deg);
+    width: 324px;
+    height: 120px;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-discount>p{
+    color: var(--base-color);
+}
+
+.card-discount p:nth-child(1){
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.card-discount p:nth-child(2){
+    font-size: 32px;
+    font-weight: 800;
+}
+/* Newsletter subscription styles ends */
 
 /* --------------------------------------------------------------------------------------------------
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
